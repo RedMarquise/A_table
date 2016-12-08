@@ -1,0 +1,158 @@
+/* ----------------------------------
+          Based on 16px layout
+
+RedMarquise v0.1 / 6122016
+---------------------------------------*/
+
+html {
+    margin: 0 auto;
+/* Sets the baseline font size to 14 px  14/16 = 0.875 */
+    font-size: 87.5%;
+}
+
+/* Apply a natural box layout model to all elements, but allows components to change. Width & height properties include padding and border, but not margin */
+
+html { box-sizing: border-box;}
+
+*, :before, :after { box-sizing: inherit;}
+
+body {
+   /* width: 56em;*/                   /*960-4*10/2/16px*/
+    font-family: Raleway, sans-serif;
+/* Apply a fixed padding to the whole body */
+    padding-left: 1.625rem;
+   /* background-color: #efeee5;*/
+}
+
+/*--- HEADINGS ---*/
+
+h1 {
+    font-size: 2.25rem;         /*36/16px*/
+    line-height: 0.6666em;      /*24/36px*/
+    margin-bottom: 0.6666em;    /*24/36px*/
+}
+
+h2 {
+    font-size: 1.5rem;          /*24/16px*/
+    line-height: 1em;           /*24/24px*/
+    margin-bottom: 1em;         /*24/24px*/
+}        
+
+h3 {
+    font-size: 1.3125rem;       /*21/16px*/
+    line-height: 1.1428em;      /*24/21px*/
+    margin-bottom: 1.1428em;    /*24/21px*/
+}
+
+h4 {
+    font-size: 1.125rem;        /*18/16px*/
+    line-height: 1.3333em;      /*24/18px*/
+    margin-bottom: 1.3333em;    /*24/18px*/
+}
+
+h5, h6 {
+    font-size: 1rem;            /*16/16px*/
+    line-height: 1.5em;         /*24/16px*/
+    margin-bottom: 1.5em;        /*24/16px*/
+}
+
+/*--- PARAGRAPHS AND TEXT ---*/
+
+p {
+    margin-bottom: 1.5em;       /*24/16px*/
+}
+
+i {font-style: italic;}
+
+/*--- MISCELLANEOUS ---*/
+
+ol { list-style-type: none;}
+
+/*ul { margin-bottom: 1.5em;}*/
+
+li { padding: 0 2rem 1rem 0; }
+
+.horizontal {}
+
+ul.horizontal li { float: left;}
+
+a { color: #000000;
+    text-decoration-line: none; }
+
+a:hover { text-decoration: underline; }
+
+#recipe-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.orange {color: #ff6600;}
+
+.bold-orange {color: #ff6600; font-weight:500;}
+
+
+/*--- RULERS ---*/
+
+hr {
+    height: 0.0625em;
+    min-height: 1px;
+    margin-top: 0;
+    margin-bottom: 1.5rem; }
+
+/*--- STRUCTURE MAIN ---*/
+
+div {}
+
+.band { padding: 1.5rem 0 0 1.625rem; clear:both; }
+
+.top-container {
+    height: 5rem;
+    padding: 1.375rem 0 1.375rem;
+    border-bottom: 1px solid #000000;
+}
+
+.top-container h1 {
+    color: #666666;
+    line-height: 1em;
+}
+
+.middle-top-container {}
+
+.middle-bottom-container {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    overflow:auto;}
+
+.bottom-container {
+    width: 100%;
+    clear:both;
+    padding: 0 2rem 0 0;
+    margin: 10% 0 0 0;
+    text-align: right;
+}
+
+.left-column {
+    width: 35%;
+    float: left;
+    padding-left: 3.25rem;
+}
+
+.right-column {
+    width: 55%;
+    margin-left:35%;
+}
+
+/*--- STRUCTURE PAGES RECETTES ---*/
+
+.recipe-band { padding: 1.5rem 0 0 0; }
+
+.recipe-details-band { padding: 0 0 1.5rem 0; }
+
+.ingredients-band { overflow:hidden; }
+
+.ingredients-band-name { color:#ff6600; padding: 0 0 0 0; }
+
+.instructions-band { overflow:hidden; }
+
+.instructions-band-name { color:#ff6600; padding: 0 0 0 0; }
